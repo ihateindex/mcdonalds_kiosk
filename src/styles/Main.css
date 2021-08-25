@@ -1,0 +1,93 @@
+.Main {
+    background-color: #fff;
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Main .inner { 
+    padding-left: 80px;
+}
+
+.Main .logo {
+    width: 102px;
+    margin-bottom: 160px;
+}
+
+.Main .title {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.25;
+}
+
+.Main .title b {
+    font-weight: 700;
+}
+
+.Main .menu .title-block {
+    margin-bottom: 70px;
+}
+
+.Main .menu-list {
+    margin-bottom: 120px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 216px);
+}
+
+.Main .menu-list li {
+    width: 216px;
+    height: 234px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #f8f8f7;
+}
+
+.Main .menu-list li.is-accent {
+    background-color: #c81c1d;
+    color: #fff;
+}
+
+.Main .menu-list li img {
+    width: 86px;
+    margin-bottom: 20px;
+}
+
+.Main .menu-list li p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.Main .side-bar {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    background-color: #fbfbf9;
+    height: 100%;
+    box-sizing: border-box;
+    width: 272px;
+    border-left: 1px solid #f8f8f8;
+    padding: 346px 16px 0;
+}
+
+.Main .side-bar .title-block {
+    padding: 0 30px;
+}
+
+.Main .side-bar .title-block .title {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.Main .side-bar .title-block .desc {
+    font-size: 24px;
+    font-weight: 400;
+    color: #727270;
+}

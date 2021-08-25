@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
     height: 100%;
@@ -10,49 +16,35 @@ body {
 }
 
 .App {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1;
+    letter-spacing: -0.05em;
     width: 894px;
     height: 1920px;
     margin: 0 auto;
-    padding-top: 280px;
-    background-color: #efece5;
-    position: relative;
-    overflow: hidden;
 }
 
 .nav-country {
-  position: absolute;
-  z-index: 100;
-  top: 110px;
-  right: 72px;
+    position: absolute;
+    z-index: 100;
+    top: 110px;
+    right: 72px;
 }
 
 .nav-country .btn-change-country {
-  border: 5px solid #fff;
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 60px;
-  height: 60px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
 }
 
 .nav-country .btn-change-country.usa {
-  background-image: url(/assets/usa_flag.png);
-}
-
-.App-logo {
-    width: 268px;
-    margin: 0 auto 236px;
-    text-align: center;
-    display: block;
-}
-
-.App-title {
-    text-align: center;
-    margin-bottom: 170px;
-    font-weight: 500;
-    font-size: 72px;
-    line-height: 1.2;
+    background-image: url(assets/usa_flag.png);
 }
 
 /* .App-header {

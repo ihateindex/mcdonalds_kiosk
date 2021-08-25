@@ -1,12 +1,33 @@
 import React from 'react';
-import './Intro.css';
+import { Link } from 'react-router-dom';
+import '../styles/Intro.css';
 
 function Intro() {
     return (
         <div className="intro">
-            <h2>맥도날드</h2>
+            <div className="nav-country">
+                <button type="button" className="btn-change-country usa"></button>
+            </div>
+            <div className="intro-title-block">
+                <img className="intro-logo" src="./assets/mcdonalds_logo.svg" alt="" />
+                <h2 className="intro-title">
+                    Where will you be
+                    <br />
+                    eating today?
+                </h2>
+            </div>
+            <div className="btn-block">
+                <Link to="/page/Main">
+                    <img src="./assets/eat_in_icon.png" alt="" />
+                    <p>Eat In</p>
+                </Link>
+                <Link to="/page/Main">
+                    <img src="./assets/take_out_icon.png" alt="" />
+                    <p>Take Out</p>
+                </Link>
+            </div>
         </div>
-    )
+    );
 }
 
 export default Intro;
