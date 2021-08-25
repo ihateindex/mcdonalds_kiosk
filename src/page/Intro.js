@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Intro.css';
+// import Main from './Main';
 
 function Intro() {
     return (
@@ -17,11 +18,25 @@ function Intro() {
                 </h2>
             </div>
             <div className="btn-block">
-                <Link to="/page/Main">
+                <Link
+                    to={{
+                        pathname: `/page/Main`,
+                        state: {
+                            title: 'Eat In',
+                        },
+                    }}
+                >
                     <img src="./assets/eat_in_icon.png" alt="" />
                     <p>Eat In</p>
                 </Link>
-                <Link to="/page/Main">
+                <Link
+                    to={{
+                        pathname: `/page/Main`,
+                        state: {
+                            title: 'Take Out',
+                        },
+                    }}
+                >
                     <img src="./assets/take_out_icon.png" alt="" />
                     <p>Take Out</p>
                 </Link>
