@@ -5,7 +5,9 @@ function Main(props) {
     return (
         <div className="Main">
             <div className="inner">
+                {/* // ! Main menu로 컴포넌트 화 */}
                 <div className="menu">
+                    {/* // * Main menu title block으로 컴포넌트 화 */}
                     <div className="title-block">
                         <img className="logo" src="/assets/mcdonalds_logo.svg" alt="" />
                         <h2 className="title">
@@ -15,6 +17,7 @@ function Main(props) {
                         </h2>
                     </div>
                     <ul className="menu-list">
+                        {/* // * memu list box로 컴포넌트 화 */}
                         <li className="is-accent">
                             <img src="/assets/combo_meal.png" alt="" />
                             <p>Combo Meal</p>
@@ -46,18 +49,25 @@ function Main(props) {
                         </li>
                     </ul>
                 </div>
+                {/* // ! Main menu로 컴포넌트 화 END */}
+                {/* // ! Main product로 컴포넌트 화 */}
                 <div className="product">
+                    {/* // ! Main product로 title block으로 컴포넌트 화 */}
                     <div className="title-block">
                         <h2 className="title">
                             <b>Popular</b>
                         </h2>
                     </div>
+                    {/* // ! Main product로 title block으로 컴포넌트 화 * END/}
+                    {/* // ! Main product로 title block으로 컴포넌트 화 END */}
                     <ul className="product-list">
+                        {/* // ! product list box로 컴포넌트 화 */}
                         <li>
                             <img src="/assets/big_mac.jpeg" alt="" />
                             <p className="name">Big Mac</p>
                             <p className="price">$ 3.79</p>
                         </li>
+                        {/* // ! product list box로 컴포넌트 화 END */}
                         <li>
                             <img src="/assets/quarter_pounder_cheese.jpeg" alt="" />
                             <p className="name">Quarter Pounder</p>
@@ -104,7 +114,9 @@ function Main(props) {
                         </li>
                     </ul>
                 </div>
+                {/* // ! Main product로 컴포넌트 화 END */}
             </div>
+            {/* // ! Main side bar로 컴포넌트 화 */}
             <div className="side-bar">
                 <div className="nav-country">
                     <button type="button" className="btn-change-country usa"></button>
@@ -118,6 +130,7 @@ function Main(props) {
                     <p className="desc">{props.location.state.title}</p>
                 </div>
                 <ul className="cart-list">
+                    {/* // * cart list box로 컴포넌트 화 */}
                     <li>
                         <div className="pic">
                             <img src="/assets/big_mac.jpeg" alt="" />
@@ -134,12 +147,14 @@ function Main(props) {
                             </button>
                         </div>
                     </li>
+                    {/* // * cart list box로 컴포넌트 화 END */}
                     <li>
                         <div className="pic">
                             <img src="/assets/filet_o_fish.jpeg" alt="" />
                         </div>
                         <p className="name">Filet-O-Fish</p>
                         <p className="price">$ 3.79</p>
+                        {/* // ! Main quantity block으로 컴포넌트 화 */}
                         <div className="quantity-block">
                             <button type="button" className="btn-minus">
                                 -
@@ -149,6 +164,7 @@ function Main(props) {
                                 +
                             </button>
                         </div>
+                        {/* // ! Main quantity block으로 컴포넌트 화 END */}
                     </li>
                     <li>
                         <div className="pic">
@@ -170,9 +186,14 @@ function Main(props) {
                 <div className="total-price-block">
                     <h5 className="title">Total</h5>
                     <h2 className="total-price">$13.86</h2>
+                    {/* // ! Main submit button으로 컴포넌트 화 */}
                     <button type="button" className="btn-submit">Done</button>
+                    {/* // ! Main submit button으로 컴포넌트 화 END */}
                 </div>
             </div>
+            {/* // ! Main side bar로 컴포넌트 화 END */}
+            {/* // * 메뉴 상세 팝업 */}
+            <div className=""></div>
         </div>
     );
 }
